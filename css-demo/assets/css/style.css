@@ -9,6 +9,23 @@ html {
   box-sizing: inherit;
 }
 
+
+/*  ---------------Utility Classes----------------- */
+
+.container{
+width: 80vw;
+max-width:960px;  
+margin: 40px auto;  
+}
+
+/*  ---------------Responsive images----------------- */
+img{
+  max-width:  100%;
+}
+
+
+
+
 /*  ---------------Global Styles----------------- */
 body{
     background-color: #ffffff;
@@ -49,6 +66,8 @@ header.primary h2{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    max-width: 960px;
+    margin: 20px auto;
   }
 
 
@@ -69,3 +88,55 @@ header.primary h2{
   header.primary nav a:hover {
     background-color: rgb(0, 0, 0, .8);
   }
+
+  #intro h2{
+  color:#3B638B;
+ border-bottom: 1px dotted #c0c0c0;
+  
+ 
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:20px;
+}
+
+#content .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+  padding:10px;
+  font-size: .8rem;
+}
+
+figure{margin:0}
+
+#content time, figcaption{
+  text-transform: uppercase;
+  font-size: .6rem;
+}
+
+#content a{
+  color:#3B638B
+}
+
+
+
+
+
+
+  /*----------------------Media Queries *?---------------------*/
+
+ @media screen and (max-width:500px){
+  
+header.primary nav ul{
+  flex-direction:column;
+  gap:10px;
+}  
+  
+  header.primary nav a {
+    display:block;
+  } 
+  
+  
+}
