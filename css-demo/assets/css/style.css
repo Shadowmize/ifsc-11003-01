@@ -18,6 +18,29 @@ max-width:960px;
 margin: 40px auto;  
 }
 
+.img-right{
+float:right;
+border: 1px double #ccc;
+padding: 5px;
+margin:10px 0 10px 20px;
+}
+
+.img-left{
+float:left;
+border: 1px solid #ccc;
+padding: 5px;
+margin:10px 0 10px 20px;
+}
+
+.img-center{
+  display:block;
+  margin:10px auto;
+  border: 3px double #ccc;
+  padding:5px;
+  border-radius:5px;
+}
+
+
 /*  ---------------Responsive images----------------- */
 img{
   max-width:  100%;
@@ -121,6 +144,75 @@ figure{margin:0}
 #content a{
   color:#3B638B;
 }
+
+#practice h2{
+  color: #3B638B;
+  border-bottom: 1px dotted #cccccc;
+}
+
+#practice a:link, #practice a:visited {
+  color: #3B638B;
+}
+
+
+#practice h3{
+  border-left: 7.5px solid #3B638B;
+  padding:5px 0 5px 7.5px;
+}
+
+
+table{
+  width: 100%;
+  border:1px solid #c0c0c0;
+  border-collapse: collapse;
+}
+
+caption{
+  font-weight: bold;
+  margin: 10px;
+  font-size:1.3rem;
+}
+
+
+tr:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+td:nth-child(n+2){
+  text-align:right;
+}
+
+tr:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+th{
+background-color: #172635;
+color:#ffffff;
+padding: 7.5px;
+}
+
+
+
+td{
+    border:1px solid #c0c0c0;
+padding:5px;
+}
+
+#practice ol{
+  list-style-type:lower-roman;
+}
+
+
+#practice ul ul {
+  color:red;
+}
+
+#practice ul ul ul{
+  color:black;
+}
+
+
 
 aside[role="complementary"]{
 background-color: #172635;
